@@ -4,71 +4,116 @@
 
 [![SQL](https://img.shields.io/badge/SQL-Analysis-blue)](sql/ecommerce_sales_analysis.sql) [![Python](https://img.shields.io/badge/Python-Pandas%2FNumPy-yellow)](python/ecommerce_sales_analysis.py) [![Power BI](https://img.shields.io/badge/Power%20BI-Dashboard-orange)](powerbi/dax_measures.md) [![Excel](https://img.shields.io/badge/Excel-Data%20Cleaning-green)](data/README.md)
 
-An end-to-end **Data Analyst portfolio project** demonstrating a complete workflow from transaction data preparation to business-focused analysis, KPI reporting and dashboard design.
+An end-to-end **Data Analyst portfolio project** demonstrating how raw transaction data can be cleaned, validated, analyzed and converted into business-focused KPIs, insights and a Power BI dashboard design.
 
-> **Portfolio dataset note:** The E-Commerce Sales Performance Dataset is created for portfolio and learning purposes. It is not presented as data from a real company.
+> **Portfolio dataset note:** This dataset is created for portfolio and learning purposes. It is not presented as data from a real company.
 
-## Business Objective
-Analyze e-commerce sales performance and identify patterns in revenue, profit, orders, products, regions, categories, and sales channels that can support business decisions.
+## 🎯 Business Objective
+Analyze e-commerce sales performance across time, products, categories, regions and sales channels to identify revenue and profitability patterns and support data-driven recommendations.
 
-## Tools
-- **Excel:** data cleaning, transformation, KPI summaries and reporting
-- **SQL:** KPI calculations and multidimensional analysis
-- **Python:** Pandas/NumPy cleaning and exploratory analysis
-- **Power BI:** interactive KPI dashboard, trends, rankings and slicers
+## 🛠️ Tools & Skills
+- **Excel:** cleaning, transformation, KPI reporting and validation
+- **SQL:** aggregations, KPI calculations, grouping, ranking and trend analysis
+- **Python:** Pandas/NumPy data preparation and exploratory analysis
+- **Power BI:** dashboard design, KPI cards, trends, slicers and business reporting
+- **Analytics:** data quality checks, EDA, profitability analysis and recommendations
 
-## Workflow
+## 🔄 Analytical Workflow
 **Raw Data → Data Cleaning → Validation → EDA → SQL Analysis → Power BI → Insights & Recommendations**
 
-## Dataset — E-Commerce Sales Performance Dataset
-The cleaned analytical dataset contains **1,200 records and 14 columns** covering orders, dates, region, sales channel, category, product, units sold, price, discount, revenue, cost, profit, month and profit margin.
+## 📊 Dashboard Preview
 
-The portfolio dataset includes source-style data-quality issues such as duplicate records and missing categorical values so the project demonstrates a practical cleaning and validation workflow.
+![E-Commerce Sales Performance Dashboard](powerbi_dashboard.png)
 
-See [`data/README.md`](data/README.md) for the data dictionary and cleaning notes.
+The dashboard design focuses on the questions a business stakeholder would typically ask:
+- How much revenue and profit are we generating?
+- How is performance changing month over month?
+- Which categories and products drive revenue?
+- Which regions and channels perform best?
+- Where should management investigate profitability opportunities?
 
-## Key Analysis
-The project answers:
-1. What are total revenue, profit, orders and units sold?
-2. How does revenue and profit change over time?
-3. Which categories and products contribute most?
-4. Which regions perform best?
-5. Which sales channel generates the most revenue?
-6. Where are opportunities to improve profitability?
+## 📈 Key Results
+Based on the cleaned portfolio dataset:
 
-## Power BI Dashboard
-The dashboard specification includes:
+| KPI | Result |
+|---|---:|
+| Total Revenue | ₹12,583,439 |
+| Total Profit | ₹3,789,315 |
+| Profit Margin | 30.1% |
+| Orders | 1,200 |
+| Units Sold | 5,364 |
+| Average Order Value | ₹10,486 |
+
+### Key Findings
+1. **West** generated the highest revenue among regions.
+2. **Electronics** was the highest-revenue category.
+3. **Storage Set** was the top product by revenue.
+4. **Website** generated the highest revenue among sales channels.
+
+See [`INSIGHTS.md`](INSIGHTS.md) for the business interpretation and recommendations.
+
+## 🧹 Data Quality & Cleaning
+The raw dataset intentionally contains source-style quality issues, including duplicate records and missing categorical values. The project demonstrates:
+
+- Duplicate detection and removal
+- Missing-value identification and handling
+- Categorical standardization
+- Calculated-field validation
+- KPI reconciliation across analysis steps
+
+The raw and cleaned datasets are available in [`data/`](data/).
+
+## 🧮 SQL Analysis
+The SQL layer covers:
+
+- Overall revenue, profit, orders and units sold
+- Average order value and profit margin
+- Monthly revenue and profit trends
+- Regional performance
+- Category performance
+- Top products by revenue
+- Sales-channel performance
+
+See [`sql/ecommerce_sales_analysis.sql`](sql/ecommerce_sales_analysis.sql).
+
+## 🐍 Python Analysis
+The Python workflow demonstrates a practical Pandas/NumPy approach to:
+
+- Load and inspect transaction data
+- Detect duplicate records
+- Handle missing categorical values
+- Standardize fields
+- Calculate KPIs
+- Perform grouped analysis for business dimensions
+
+See [`python/ecommerce_sales_analysis.py`](python/ecommerce_sales_analysis.py).
+
+## 📊 Power BI
+The Power BI specification includes DAX measures for:
+
 - Total Revenue
 - Total Profit
 - Total Orders
 - Units Sold
 - Profit Margin
 - Average Order Value
-- Monthly Revenue & Profit trend
-- Category performance
-- Regional revenue
-- Sales-channel performance
-- Top 10 products by revenue
-- Date, Region, Category and Sales Channel slicers
+- Previous-month revenue/profit
+- Month-over-month growth
+
+Recommended dashboard views include KPI cards, monthly trends, category performance, regional revenue, sales-channel performance, top products and interactive slicers.
 
 See [`powerbi/dax_measures.md`](powerbi/dax_measures.md).
 
-## SQL
-The SQL analysis includes overall KPIs, monthly trends, regional performance, category performance, top products and sales-channel analysis.
-
-See [`sql/ecommerce_sales_analysis.sql`](sql/ecommerce_sales_analysis.sql).
-
-## Python
-The Python workflow documents the Pandas/NumPy approach for duplicate removal, categorical standardization, KPI calculation and grouped analysis.
-
-See [`python/ecommerce_sales_analysis.py`](python/ecommerce_sales_analysis.py).
-
-## Repository Structure
+## 📁 Repository Structure
 ```text
 .
 ├── README.md
+├── INSIGHTS.md
+├── powerbi_dashboard.png
 ├── data/
-│   └── README.md
+│   ├── README.md
+│   ├── ecommerce_sales_raw.csv
+│   └── ecommerce_sales_cleaned.csv
 ├── sql/
 │   └── ecommerce_sales_analysis.sql
 ├── python/
@@ -77,8 +122,8 @@ See [`python/ecommerce_sales_analysis.py`](python/ecommerce_sales_analysis.py).
     └── dax_measures.md
 ```
 
-## Analyst Skills Demonstrated
+## 💡 Analyst Skills Demonstrated
 **Data Cleaning · Data Validation · SQL · Excel · Python · Pandas · NumPy · Power BI · DAX · KPI Analysis · EDA · Dashboard Design · Business Insights**
 
-## Portfolio Note
-This project is designed to demonstrate how a junior analyst can structure a complete analytical problem: define KPIs, clean imperfect data, validate calculations, investigate business dimensions, build a decision-focused dashboard, and communicate recommendations clearly.
+## 👤 About This Project
+This project is designed to demonstrate a junior Data Analyst workflow from imperfect source data to a decision-focused analytical output. The emphasis is not only on calculating numbers, but also on validating the data, structuring analysis around business questions and communicating actionable findings.
