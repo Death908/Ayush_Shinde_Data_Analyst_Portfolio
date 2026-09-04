@@ -4,9 +4,9 @@
 
 [![SQL](https://img.shields.io/badge/SQL-Analysis-blue)](sql/ecommerce_sales_analysis.sql) [![Python](https://img.shields.io/badge/Python-Pandas%2FNumPy-yellow)](python/ecommerce_sales_analysis.py) [![Power BI](https://img.shields.io/badge/Power%20BI-Dashboard-orange)](powerbi/dax_measures.md) [![Excel](https://img.shields.io/badge/Excel-Data%20Cleaning-green)](data/README.md)
 
-An end-to-end **Data Analyst portfolio project** demonstrating a complete workflow from imperfect transaction data to business-focused analysis and dashboard design.
+An end-to-end **Data Analyst portfolio project** demonstrating a complete workflow from transaction data preparation to business-focused analysis, KPI reporting and dashboard design.
 
-> **Dataset note:** This is a synthetic dataset created for learning and portfolio purposes. It is not presented as real company data.
+> **Portfolio dataset note:** The E-Commerce Sales Performance Dataset is created for portfolio and learning purposes. It is not presented as data from a real company.
 
 ## Business Objective
 Analyze e-commerce sales performance and identify patterns in revenue, profit, orders, products, regions, categories, and sales channels that can support business decisions.
@@ -20,10 +20,10 @@ Analyze e-commerce sales performance and identify patterns in revenue, profit, o
 ## Workflow
 **Raw Data → Data Cleaning → Validation → EDA → SQL Analysis → Power BI → Insights & Recommendations**
 
-## Dataset
+## Dataset — E-Commerce Sales Performance Dataset
 The cleaned analytical dataset contains **1,200 records and 14 columns** covering orders, dates, region, sales channel, category, product, units sold, price, discount, revenue, cost, profit, month and profit margin.
 
-The raw data intentionally includes duplicates and missing categorical values so the project demonstrates real-world data-quality handling.
+The portfolio dataset includes source-style data-quality issues such as duplicate records and missing categorical values so the project demonstrates a practical cleaning and validation workflow.
 
 See [`data/README.md`](data/README.md) for the data dictionary and cleaning notes.
 
